@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,8 +11,21 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        greenCustom: "#A2F97D", // Custom green color
+      },
+      animation: {
+        moveCard: "moveCard 8s ease-in-out infinite", // Increase left to right speed
+      },
+      keyframes: {
+        moveCard: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(100%)" }, // Move to the right
+          "100%": { transform: "translateX(0)" },   // Reset to left
+        },
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
