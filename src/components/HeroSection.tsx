@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-20 mt-16 md:mt-28 py-10">
+    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-24 py-24">
       <div className="w-full flex flex-col items-center">
         <h1 className="text-gray-800 font-medium text-center tracking-tight leading-tight
           text-3xl sm:text-4xl md:text-5xl lg:text-[59px]">
@@ -12,7 +12,7 @@ function HeroSection() {
         </h1>
         
         <p className="text-black font-regular text-center mt-4 md:mt-6
-          text-base sm:text-lg md:text-xl max-w-[90%] md:max-w-[80%] lg:max-w-[70%]">
+          text-base md:text-md lg:text-md">
           From stunning designs to flawless code, we build websites that
           captivate, perform, and scale.
           <br className="hidden sm:block" />
@@ -30,7 +30,7 @@ function HeroSection() {
       </div>
 
       {/* Moving Green Cards Section */}
-      <div className="relative overflow-hidden py-8 md:py-12 mt-8 md:mt-12">
+      <div className="relative overflow-hidden py-8 md:py-12">
         {/* Left gradient */}
         <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-16 md:w-20 
           bg-gradient-to-r from-[#FAF9F6] to-transparent z-10"></div>

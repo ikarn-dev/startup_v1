@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center space-x-4">
             <a
               href="/contact"
-              className="px-5 py-2 inline-flex items-center justify-center bg-black text-[#A2F97D] text-center rounded-full hover:bg-gray-800 transition-colors"
+              className="px-5 py-2 inline-flex items-center justify-center bg-black font-semibold text-[#A2F97D] text-center rounded-xl hoverhover:bg-gray-800 transition-colors"
             >
               Contact Us
             </a>
