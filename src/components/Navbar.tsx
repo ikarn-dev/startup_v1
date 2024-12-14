@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-0 right-0 z-50 bg-[#faf9f633] backdrop-blur-md ">
+    <nav className="fixed left-0 right-0 z-50  backdrop-blur-md ">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-20 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile View - Hamburger and Contact Button */}
-          <div className="md:hidden flex items-center space-x-4">
+          <div className="md:hidden flex items-center backdrop-blur-md space-x-4">
             <a
               href="/contact"
               className="px-5 py-2 inline-flex items-center justify-center bg-black text-[#A2F97D] text-center rounded-full hover:bg-gray-800 transition-colors"
@@ -70,31 +70,24 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div>
-          {/* Blur Background */}
-          <div
-            className="fixed inset-0 bg-gray-900/70 backdrop-blur-md"
-            onClick={closeMenu}
-          ></div>
-
-          {/* Menu */}
-          <div className="fixed top-0 right-0 w-64 h-full bg-white shadow-lg z-50">
-            <div className="flex flex-col items-start pt-20 px-6 space-y-6">
-              {NAV_LINKS.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-lg text-gray-800 hover:text-gray-600"
-                  onClick={closeMenu}
-                >
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          </div>
+      <div
+        className={`transition-all duration-300 ${
+          isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        } overflow-hidden`}
+      >
+        <div className="flex flex-col items-start pt-4 pb-4 px-6 space-y-4">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-lg text-gray-800 hover:text-gray-600"
+              onClick={closeMenu}
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
-      )}
+      </div>
     </nav>
   );
 };
