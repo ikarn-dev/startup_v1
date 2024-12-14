@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-overused-grotesk)'],
+        sans: ['var(--font-overused-grotesk)', 'var(--font-playfair-display)'],
       },
       colors: {
         background: "var(--background)",
@@ -17,13 +17,12 @@ const config: Config = {
         greenCustom: "#A2F97D", // Custom green color
       },
       animation: {
-        moveCard: "moveCard 8s ease-in-out infinite", // Increase left to right speed
+        infiniteScroll: 'infiniteScroll 25s linear infinite',
       },
       keyframes: {
-        moveCard: {
-          "0%": { transform: "translateX(0)" },
-          "50%": { transform: "translateX(100%)" }, // Move to the right
-          "100%": { transform: "translateX(0)" },   // Reset to left
+        infiniteScroll: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
         },
       },
     },

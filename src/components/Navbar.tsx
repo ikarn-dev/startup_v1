@@ -21,9 +21,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-0 right-0 z-50 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+    <nav className="fixed left-0 right-0 z-50 bg-[#faf9f633] backdrop-blur-md ">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-20 py-4">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-xl font-bold text-gray-800">Logo</div>
 
@@ -33,14 +33,14 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-800 hover:text-gray-600 px-3 py-2"
+                className="text-gray-800 font-medium hover:text-gray-600 px-3 py-2"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="/contact"
-              className="w-[120px] h-[40px] inline-flex items-center justify-center bg-black text-[#A2F97D] text-center rounded-full hover:bg-gray-800 transition-colors"
+              className="px-5 py-2 inline-flex items-center justify-center bg-black font-semibold text-[#A2F97D] text-center rounded-xl hover:bg-gray-800 transition-colors"
             >
               Contact Us
             </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center space-x-4">
             <a
               href="/contact"
-              className="w-[120px] h-[40px] inline-flex items-center justify-center bg-black text-[#A2F97D] text-center rounded-full hover:bg-gray-800 transition-colors"
+              className="px-5 py-2 inline-flex items-center justify-center bg-black text-[#A2F97D] text-center rounded-full hover:bg-gray-800 transition-colors"
             >
               Contact Us
             </a>
