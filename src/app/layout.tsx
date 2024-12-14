@@ -3,15 +3,45 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const overusedGrotesk = localFont({
+  src: [
+    {
+      path: '../assets/fonts/OverusedGrotesk-Light.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/OverusedGrotesk-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/OverusedGrotesk-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/OverusedGrotesk-SemiBold.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/OverusedGrotesk-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/OverusedGrotesk-ExtraBold.ttf',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/OverusedGrotesk-Black.ttf',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-overused-grotesk'
 });
 
 export const metadata: Metadata = {
@@ -26,9 +56,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${overusedGrotesk.variable} antialiased`}>
         <Navbar />
         {children}
       </body>
