@@ -27,7 +27,7 @@ function HeroSection() {
       {/* Moving Green Cards Section */}
       <div className="relative overflow-hidden py-12">
         {/* Left gradient */}
-        <div className="absolute left-0 top-0 bottom-0 w-28 bg-gradient-to-r from-[#FAF9F6] to-transparent z-10"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#FAF9F6] to-transparent z-10"></div>
 
         <div className="flex animate-infiniteScroll whitespace-nowrap">
           {/* First set of cards */}
@@ -49,7 +49,7 @@ function HeroSection() {
         </div>
 
         {/* Right gradient */}
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#FAF9F6] to-transparent z-10"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#FAF9F6] to-transparent z-10"></div>
       </div>
     </div>
   );
