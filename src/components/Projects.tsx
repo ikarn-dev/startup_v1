@@ -6,7 +6,7 @@ function Projects() {
       <div className="max-w-screen-lg mx-auto px-4">
         {/* Heading */}
         <h1 className="text-black text-xl font-bold text-left">
-          Take a look at what we've built
+        Take a look at what we've built
         </h1>
 
         {/* Section */}

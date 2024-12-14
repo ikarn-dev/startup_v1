@@ -25,7 +25,7 @@ function HeroSection() {
         <button className="px-4 sm:px-6 py-2 sm:py-3 mt-8 md:mt-10 rounded-xl 
           bg-black font-semibold text-[#A2F97D] 
           text-base sm:text-lg hover:bg-gray-800 transition-colors">
-          Let's Build Your Website
+        Let's Build Your Website
         </button>
       </div>
 
