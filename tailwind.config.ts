@@ -8,21 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['var(--font-overused-grotesk)', 'var(--font-playfair-display)'],
-      },
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        greenCustom: "#A2F97D", // Custom green color
-      },
       animation: {
-        infiniteScroll: 'infiniteScroll 25s linear infinite',
+        "infinite-scroll": "infiniteScroll 20s linear infinite",
       },
       keyframes: {
         infiniteScroll: {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-50%)' },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
     },

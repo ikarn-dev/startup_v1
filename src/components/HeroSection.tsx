@@ -37,8 +37,7 @@ function HeroSection() {
         <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-16 md:w-20 
           bg-gradient-to-r from-[#FAF9F6] to-transparent z-10"></div>
 
-        <div className="flex animate-infiniteScroll whitespace-nowrap">
-          {/* First set of cards */}
+<div className="flex animate-infinite-scroll whitespace-nowrap">          {/* First set of cards */}
           <div className="flex gap-3 sm:gap-4 mr-3 sm:mr-4">
             {[...Array(5)].map((_, index) => (
               <div key={`card1-${index}`} 
