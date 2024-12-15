@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-0 right-0 z-50  backdrop-blur-md ">
+    <nav className="fixed left-0 right-0 z-50 backdrop-blur-md">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-20 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -40,7 +40,7 @@ const Navbar = () => {
             ))}
             <a
               href="/contact"
-              className="px-5  py-2 inline-flex items-center justify-center  bg-black font-semibold text-[#A2F97D] text-center rounded-xl hover:bg-gray-800 transition-colors"
+              className="px-5 py-2 inline-flex items-center justify-center border-2 border-[#A2F97D] bg-black font-semibold text-[#A2F97D] text-center rounded-full hover:bg-gray-800 transition-colors"
             >
               Contact Us
             </a>
@@ -50,13 +50,13 @@ const Navbar = () => {
           <div className="md:hidden flex items-center backdrop-blur-md space-x-4">
             <a
               href="/contact"
-              className="px-5 py-2 inline-flex items-center justify-center bg-black text-[#A2F97D] text-center rounded-full hover:bg-gray-800 transition-colors"
+              className="px-5 py-2 inline-flex items-center justify-center border-2 border-[#A2F97D] bg-black text-[#A2F97D] text-center rounded-full hover:bg-gray-800 transition-colors"
             >
               Contact Us
             </a>
             <button
               onClick={toggleMenu}
-              className=" border-2 border-[#A2F97D] relative w-10 h-10 bg-black rounded-full flex items-center justify-center cursor-pointer"
+              className="border-2 border-[#A2F97D] relative w-10 h-10 bg-black rounded-full flex items-center justify-center cursor-pointer"
               aria-label="Toggle menu"
             >
               {!isMenuOpen ? (

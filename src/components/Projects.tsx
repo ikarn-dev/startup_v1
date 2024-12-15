@@ -1,3 +1,4 @@
+
 import React from "react";
 
 function Projects() {
@@ -6,19 +7,15 @@ function Projects() {
       <div className="max-w-screen-lg mx-auto px-4">
         {/* Heading */}
         <h1 className="text-black text-xl font-bold text-left">
-        Take a look at what we've built
+          Take a look at what we&#39;ve built
         </h1>
 
         {/* Section */}
         <div className="w-full h-[500px] mt-10 bg-black rounded-[20px] p-6">
           {/* Text at Top Left */}
-          <h1 className="text-white text-lg font-semibold mb-10">
-            TOOL
-          </h1>
+          <h1 className="text-white text-lg font-semibold mb-10">TOOL</h1>
 
-          <p className="flex mb-5 text-white">
-            Find And Book Local Beauty Experts
-          </p>
+          <p className="flex mb-5 text-white">Find And Book Local Beauty Experts</p>
 
           {/* Buttons */}
           <div className="flex flex-row gap-4 mb-16">
@@ -43,13 +40,9 @@ function Projects() {
         {/* Section */}
         <div className="w-full h-[500px] mt-10 bg-black rounded-[20px] p-6">
           {/* Text at Top Left */}
-          <h1 className="text-white text-lg font-semibold mb-10">
-            TOOL
-          </h1>
+          <h1 className="text-white text-lg font-semibold mb-10">TOOL</h1>
 
-          <p className="flex mb-5 text-white">
-            Find And Book Local Beauty Experts
-          </p>
+          <p className="flex mb-5 text-white">Find And Book Local Beauty Experts</p>
 
           {/* Buttons */}
           <div className="flex flex-row gap-4 mb-16">
@@ -70,13 +63,11 @@ function Projects() {
         </div>
       </div>
       <div className="justify-center items-center flex mt-10 mb-5">
-            <button className="w-[180px] h-[50px] bg-black text-[#A2F97D] font-bold rounded-[15px]  hover:bg-gray-800 transition">
-                Explore All Projects
-            </button>
-          </div>
+        <button className="w-[180px] h-[50px] bg-black text-[#A2F97D] font-bold rounded-[15px] hover:bg-gray-800 transition">
+          Explore All Projects
+        </button>
+      </div>
     </div>
-
-    
   );
 }
 
