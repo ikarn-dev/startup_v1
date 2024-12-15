@@ -24,10 +24,10 @@ const Navbar = () => {
     <nav className="fixed left-0 right-0 z-50 backdrop-blur-md">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-20 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
+
           <div className="text-xl font-bold text-gray-800">Logo</div>
 
-          {/* Desktop Navigation */}
+
           <div className="hidden md:flex space-x-4 items-center">
             {NAV_LINKS.map((link) => (
               <a
@@ -46,7 +46,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Mobile View - Hamburger and Contact Button */}
+
           <div className="md:hidden flex items-center backdrop-blur-md space-x-4">
             <a
               href="/contact"
@@ -69,7 +69,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`transition-all duration-300 ${
           isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
