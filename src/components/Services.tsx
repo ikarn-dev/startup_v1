@@ -61,7 +61,12 @@ function Services() {
               (service, index) => (
                 <motion.div
                   key={service.id}
-                  ref={(el) => (cardsRef.current[index] = el)} // Attach ref for GSAP animation
+                  ref={(el) => {
+                    // Safely assign the element to the ref array
+                    if (el) {
+                      cardsRef.current[index] = el;
+                    }
+                  }} // Attach ref for GSAP animation
                   className="w-full h-[160px] bg-black rounded-3xl mb-5 flex items-center gap-7 px-20"
                   variants={cardVariants} // Framer Motion hover variants
                   whileHover="whileHover"
