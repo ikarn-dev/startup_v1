@@ -1,12 +1,49 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 function HeroSection() {
+  const headingRef = useRef<HTMLHeadingElement | null>(null);
+  const paragraphRef = useRef<HTMLParagraphElement | null>(null);
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    // GSAP Animations
+    const timeline = gsap.timeline({ defaults: { duration: 1, ease: "power3.out" } });
+
+    // Animate heading
+    timeline.from(headingRef.current, {
+      y: 50,
+      opacity: 0,
+    });
+
+    // Animate paragraph
+    timeline.from(
+      paragraphRef.current,
+      {
+        y: 30,
+        opacity: 0,
+      },
+      "-=0.5" // Overlap with heading animation
+    );
+
+    // Animate button
+    timeline.from(
+      buttonRef.current,
+      {
+        scale: 0.9,
+        opacity: 0,
+      },
+      "-=0.4" // Overlap with paragraph animation
+    );
+  }, []);
+
   return (
-    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-20 2xl:px-72 lg:py-20 pt-24">
+    <div className="w-full mt-10 px-4 sm:px-6 md:px-8 lg:px-20 2xl:px-72 lg:py-20 pt-24">
       <div className="w-full flex flex-col items-center">
         <h1
+          ref={headingRef} // Add ref to heading
           className="text-gray-800 font-medium text-center tracking-tight leading-tight
           text-3xl sm:text-4xl md:text-5xl lg:text-[59px]"
         >
@@ -16,19 +53,16 @@ function HeroSection() {
         </h1>
 
         <p
+          ref={paragraphRef} // Add ref to paragraph
           className="text-black font-regular text-center mt-4 md:mt-6
           text-base md:text-md lg:text-md"
         >
           From stunning designs to flawless code, we build websites that
           captivate, perform, and scale.
-          <br className="hidden sm:block" />
-          <span className="block mt-2 sm:mt-0">
-            Your journey from concept to a production-ready masterpiece starts
-            here.
-          </span>
         </p>
 
         <button
+          ref={buttonRef} // Add ref to button
           className="px-4 sm:px-6 py-2 sm:py-3 mt-8 md:mt-10 rounded-xl 
           bg-black font-semibold text-[#A2F97D] 
           text-base sm:text-lg hover:bg-gray-800 transition-colors"
