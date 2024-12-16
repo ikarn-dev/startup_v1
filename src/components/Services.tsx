@@ -1,25 +1,39 @@
-import React from 'react';
+import React from "react";
 
 function Services() {
   return (
-    <div className="w-full mb-10">
-      <div className="max-w-screen-lg mx-auto px-4">
-        {/* Heading */}
-        <h1 className="text-black text-xl font-semibold text-left">Our Services</h1>
+    <div className="w-full px-4 sm:px-6 md:px-8 lg:px-20 2xl:px-72 lg:py-20 py-10">
+      <div className="">
+        <h1 className="text-black text-xl font-semibold text-left">
+          Our Services
+        </h1>
 
-        {/* Section */}
-        <div className="w-full h-[360px] mt-10">
-          <div className="max-w-screen-lg mx-auto">
-            {/* Buttons */}
-            <button className="w-full h-[100px] bg-black text-[#A2F97D] font-bold rounded-xl mb-5 flex items-center pl-10 transition">
-            UI/UX Design
-            </button>
-            <button className="w-full h-[100px] bg-black text-[#A2F97D] font-bold rounded-xl mb-5 flex items-center pl-10 transition">
-            Web Devlopment
-            </button>
-            <button className="w-full h-[100px] bg-black text-[#A2F97D] font-bold rounded-xl flex items-center pl-10 transition">
-            Android App Development
-            </button>
+        <div className="w-full mt-10">
+          <div className="">
+            <div className="w-full h-[160px] bg-black rounded-3xl mb-5 flex items-center gap-7 px-20 transition">
+              <span className="font-extralight text-[24px] text-[#A2F97D]">
+                01
+              </span>
+              <span className="font-semibold text-[24px] text-[#A2F97D]">
+                UI/UX Design
+              </span>
+            </div>
+            <div className="w-full h-[160px] bg-black rounded-3xl mb-5 flex items-center gap-7 px-20 transition">
+              <span className="font-extralight text-[24px] text-[#A2F97D]">
+                02
+              </span>
+              <span className="font-semibold text-[24px] text-[#A2F97D]">
+                Web Development
+              </span>
+            </div>
+            <div className="w-full h-[160px] bg-black rounded-3xl mb-5 flex items-center gap-7 px-20 transition">
+              <span className="font-extralight text-[24px] text-[#A2F97D]">
+                03
+              </span>
+              <span className="font-semibold text-[24px] text-[#A2F97D]">
+                Android App Development
+              </span>
+            </div>
           </div>
         </div>
       </div>
